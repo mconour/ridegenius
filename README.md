@@ -19,7 +19,7 @@ TaskifyPro is a full-stack task management application that allows users to effi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/taskify-pro.git
+   git clone https://github.com/mconour/taskify-pro
    cd taskify-pro
    ```
 
