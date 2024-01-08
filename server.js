@@ -20,7 +20,7 @@ app.use(express.static('public'));
 const db = require('./db'); 
 
 // Import User model 
-const User = require('./models/user'); 
+const User = require('./models/User'); 
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
