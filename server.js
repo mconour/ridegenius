@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Import the cors library
+// Import cors library
 const cors = require('cors');
 
-// Allow requests from all origins (for development, you can configure this to a specific origin)
+// Allow requests from all origins
 app.use(cors());
 
 // Middleware to parse JSON request bodies
@@ -16,11 +16,11 @@ app.use(morgan('dev'));
 
 app.use(express.static('public'));
 
-// Import the MongoDB connection
-const db = require('./db'); // Adjust the path as needed to import your db.js file.
+// Import MongoDB connection
+const db = require('./db'); 
 
-// Import your User model (replace 'User' with your actual model name)
-const User = require('./models/user'); // Adjust the path as needed.
+// Import User model 
+const User = require('./models/user'); 
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 // Test route to check MongoDB connection
 app.get('/test-db', async (req, res) => {
   try {
-    const sampleUser = await User.findOne({}); // Replace 'User' with your actual model for users.
+    const sampleUser = await User.findOne({}); 
     if (sampleUser) {
       res.json({ message: 'MongoDB connected successfully!' });
     } else {
