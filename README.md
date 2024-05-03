@@ -1,67 +1,57 @@
-# TaskifyPro
+# ParkGenius
 
-TaskifyPro is a full-stack task management application that allows users to efficiently organize their tasks, set priorities, and manage deadlines. It's built using the MERN (MongoDB, Express.js, React.js, Node.js) stack, ensuring a robust and responsive user experience.
+ParkGenius is an AI-powered license plate reader system designed to enforce parking regulations. Using JavaScript and machine learning technologies, ParkGenius can detect license plates from surveillance camera feeds in real-time, allowing for automated parking enforcement.
 
 ## Features
 
-- **User Authentication:** Secure user registration and login with JWT (JSON Web Tokens) for data protection.
+- **License Plate Detection**: Utilizes machine learning models to detect license plates within surveillance camera feeds.
+- **Real-Time Processing**: Processes camera feeds in real-time, enabling immediate enforcement actions.
+- **Customizable Enforcement Logic**: Allows for customizable enforcement rules based on recognized license plates.
+- **Web-Based Interface**: Accessible via a web browser, making it easy to monitor and manage parking enforcement.
 
-- **Task Management:** Easily create, update, and delete tasks with options for category, priority, and due dates.
+## Technologies Used
 
-- **Task Filtering:** Filter tasks by category, priority, and due date to quickly find what you need.
+- **JavaScript**: Core programming language for implementing the application logic.
+- **TensorFlow.js**: Machine learning library for training and deploying license plate detection models.
+- **WebRTC**: Technology for accessing real-time camera feeds directly in the browser.
+- **Node.js**: JavaScript runtime for server-side processing and hosting.
+- **Express.js**: Web application framework for building APIs and handling HTTP requests.
 
-- **Intuitive Dashboard:** A user-friendly dashboard for a streamlined task management experience.
-
-- **Responsive Design:** Works seamlessly on various devices, ensuring accessibility on desktops, tablets, and mobile phones.
-
-## Getting Started
+## Installation
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/mconour/taskify-pro
-   cd taskify-pro
+   ```
+   git clone https://github.com/your_username/ParkGenius.git
    ```
 
 2. Install dependencies:
 
-   ```bash
-   cd client
-   npm install
-   cd ../server
+   ```
+   cd ParkGenius
    npm install
    ```
 
-3. Set up MongoDB:
+3. Start the server:
 
-   - Create a MongoDB database and configure the connection in `server/config/db.js`.
-
-4. Configure Environment Variables:
-
-   - Create a `.env` file in the `server` directory and add your environment variables (e.g., database URI, JWT secret).
-
-5. Run the application:
-
-   ```bash
-   # Start the server
-   cd server
-   npm start
-
-   # Start the client (in a separate terminal)
-   cd ../client
+   ```
    npm start
    ```
 
-6. Access the application at `http://localhost:3000` in your web browser.
+4. Access the application in your web browser at `http://localhost:3000`.
+
+## Usage
+
+1. Ensure that your surveillance camera is properly configured and accessible.
+2. Open the ParkGenius web interface in your browser.
+3. Grant permission to access the camera feed.
+4. The application will start processing the camera feed and detecting license plates in real-time.
+5. Customize enforcement rules and actions as needed.
 
 ## Contributing
 
-Contributions are welcome! Please follow our [Contribution Guidelines](CONTRIBUTING.md) for details on how to contribute to this project.
+Contributions are welcome! Please feel free to submit bug reports, feature requests, or pull requests to help improve ParkGenius.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-Special thanks to the open-source community and the creators of the MERN stack for their valuable tools and libraries.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
